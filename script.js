@@ -125,7 +125,7 @@ function showYouWon(){
    * HINT: Use the 'won' and text parameters 
    */
   // *CODE GOES BELOW HERE *
-
+  let dialog = getDialog('won', text);
   document.getElementById("result").innerHTML = dialog;
 }
 
@@ -137,7 +137,7 @@ function showNumberAbove(){
    * HINT: Use the 'warning' and text parameters 
    */
   // *CODE GOES BELOW HERE *
-
+  let dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
 
@@ -149,6 +149,6 @@ function showNumberBelow(){
    * HINT: Use the 'warning' and text parameters 
    */
   // *CODE GOES BELOW HERE *
-
+  let dialog = getDialog('warning, text');
   document.getElementById("result").innerHTML = dialog;
 }
