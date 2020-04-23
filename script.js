@@ -38,11 +38,11 @@ function playGame(){
 // *CODE GOES BELOW HERE *
 function displayResult(numberGuess) {
   if (numberGuess > correctNumber) {
-    console.log('too high');
+    showNumberAbove();
   } else if (numberGuess < correctNumber) {
-    console.log('too low');
+    showNumberBelow();
   } else {
-    console.log('is correct');
+    showYouWon();
   }
 };
 
@@ -149,6 +149,6 @@ function showNumberBelow(){
    * HINT: Use the 'warning' and text parameters 
    */
   // *CODE GOES BELOW HERE *
-  let dialog = getDialog('warning, text');
+  let dialog = getDialog('warning', text);
   document.getElementById("result").innerHTML = dialog;
 }
