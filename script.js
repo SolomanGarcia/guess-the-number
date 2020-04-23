@@ -28,13 +28,7 @@ window.onload = function() {
 function playGame(){
   // *CODE GOES BELOW HERE *
   let numberGuess = document.getElementById('number-guess').value;
-    if (numberGuess > correctNumber) {
-      console.log('too high');
-    } else if (numberGuess < correctNumber) {
-      console.log('too low');
-    } else {
-      console.log('is correct');
-    }
+  displayResult(numberGuess);
 }
 
 /**
@@ -42,7 +36,15 @@ function playGame(){
  * HINT: Use if, else if, else statement 
  */
 // *CODE GOES BELOW HERE *
-
+function displayResult(numberGuess) {
+  if (numberGuess > correctNumber) {
+    console.log('too high');
+  } else if (numberGuess < correctNumber) {
+    console.log('too low');
+  } else {
+    console.log('is correct');
+  }
+};
 
 
 /**
