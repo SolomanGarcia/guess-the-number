@@ -28,7 +28,13 @@ window.onload = function() {
 function playGame(){
   // *CODE GOES BELOW HERE *
   let numberGuess = document.getElementById('number-guess').value;
-  console.log(numberGuess);
+    if (numberGuess > correctNumber) {
+      console.log('too high');
+    } else if (numberGuess < correctNumber) {
+      console.log('too low');
+    } else {
+      console.log('is correct');
+    }
 }
 
 /**
